@@ -1,4 +1,4 @@
-# Uber Eats Restaurant Rating Prediction
+# Eatsight
 
 This project explores machine learning approaches for predicting restaurant ratings and menu item prices, as well as building a simple restaurant recommendation system, using the [Kaggle - Uber Eats USA Restaurants Menus](https://www.kaggle.com/datasets/ahmedshahriarsakib/uber-eats-usa-restaurants-menus) dataset.
 
