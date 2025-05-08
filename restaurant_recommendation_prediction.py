@@ -12,7 +12,7 @@ with open("restaurant_index.json", "r", encoding="utf-8") as f:
 
 names = [idx_map[str(i)]["name"] for i in range(len(idx_map))]
 
-query = "little india"
+query = "bunrise burgers"
 
 q_lower = query.lower()
 matches = [i for i, n in enumerate(names) if q_lower in n.lower()]
