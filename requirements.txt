@@ -5,3 +5,5 @@ numpy
 catboost
 scikit-learn
 notebook
+lightgbm
+gensim
