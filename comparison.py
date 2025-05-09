@@ -1,26 +1,3 @@
-# weight_sweep.py
-"""Grid‑search the pseudo‑label weight (0.0 → 1.0) for the self‑training
-restaurant‑score model and plot RMSE vs weight.
-
-Usage:
-    python weight_sweep.py --data restaurants_cleaned.csv
-
-Requirements:
-    pip install pandas numpy catboost scikit-learn matplotlib joblib
-
-The script will:
-1. Load the already‑cleaned CSV that has `score`, `score_missing`,
-   `price_range`, `price_range_missing`, `ratings`, `ratings_missing`,
-   `category`.
-2. Train a first‑pass CatBoost on labeled rows only.
-3. For each pseudo‑label weight w ∈ {0.0, 0.05, …, 1.0}:
-       * Retrain on the full dataset with that weight.
-       * Record RMSE on the labeled validation set.
-4. Save a PNG plot `rmse_vs_weight.png` and print a table of scores.
-
-Tip: If you need finer resolution, change `WEIGHTS = np.linspace(...)`.
-"""
-
 from __future__ import annotations
 
 import argparse
